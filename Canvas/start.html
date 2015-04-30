@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+</head>
+<body>
+	<canvas id="myCanvas" width="400" height="200"></canvas>
+</body>
+<script type="text/javascript">
+	var canvas = document.getElementById('myCanvas');
+	if (canvas.getContext) {
+		var context = canvas.getContext('2d'); 
+	}
+var posX = 20,
+    posY = 100;
+
+setInterval(function() {
+    context.fillStyle = "black";
+    context.fillRect(0,0,canvas.width, canvas.height);
+
+    posX += 1;
+    posY += 0.25;
+
+    context.beginPath();
+    context.fillStyle = "white";
+
+    context.arc(posX, posY, 10, 0, Math.PI*2, true); 
+    context.closePath();
+    context.fill();
+}, 30);
+</script>
+</html>
