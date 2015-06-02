@@ -1,0 +1,24 @@
+{
+  "name": "unittest",
+  "version": "0.0.1",
+  "description": "demo for unit test",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "keywords": [
+    "['unit'",
+    "'test'",
+    "'mocha'",
+    "'should']"
+  ],
+  "author": "yuanzm",
+  "license": "MIT"
+}
